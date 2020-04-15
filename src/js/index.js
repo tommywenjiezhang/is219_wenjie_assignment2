@@ -1,8 +1,7 @@
 
 
-
 (function () {
-    let jsonObj = JSON.parse(getResponseText("../data.json"))
+    let jsonObj = obj;
     let table = document.querySelector("table");
     let TableHeadings = Object.keys(jsonObj[0]).map(d => d.substring(3));
     console.log(jsonObj[0])
