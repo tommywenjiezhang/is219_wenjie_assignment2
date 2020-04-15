@@ -1,0 +1,44 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+    "primary": #ff3a52,
+    "dark": #000000
+);
+
+body {
+    padding-top: 5rem;
+}
+.content {
+    padding: 3rem 1.5rem;
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    color:#F6AE2D;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+#chartdiv {
+    max-width: 100%;
+    height: 600px;
+    background-color:#454a58;
+}
+
+tr:nth-child(even){
+    background-color: #CACACA;
+    color:#FFFFFF;
+}
