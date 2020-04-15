@@ -109,5 +109,5 @@ exports.html = html;
 exports.js = js;
 exports.del = del;
 exports.staticJsonFile = staticJsonFile();
-exports.serve = gulp.parallel(html, css, js, jquery, fonts,img, watchFiles, serve);
-exports.default = gulp.series(del, html, css, js, jquery,fonts,img);
+exports.serve = gulp.parallel(html, css, js, jquery, fonts,img,staticJsonFile, watchFiles, serve);
+exports.default = gulp.series(del, html, css, js, jquery,fonts,img,staticJsonFile);
